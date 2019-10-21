@@ -4,10 +4,12 @@ class Application
     resp = Rack::Response.new 
     
     time_1 = Kernel.rand(1..24)
-    time_2 = Kernel.rand(1..24)
-    time_3 = Kernel.rand(1..24)
     
-    if 
+    if time_1 < 12 
+      resp.write "Good Morning!"
+    elsif time_1 >= 12 
+      resp.write "Good Afternoon!"
+    end 
   end 
   
 end 
