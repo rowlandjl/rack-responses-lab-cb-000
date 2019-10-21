@@ -6,6 +6,8 @@ class Application
     time_1 = Kernel.rand(1..24)
     time_2 = Kernel.rand(1..24)
     time_3 = Kernel.rand(1..24)
+    
+    if 
   end 
   
 end 
